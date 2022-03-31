@@ -6,19 +6,27 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <EditText
-        android:id="@+id/urlLink"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Masukan Link URL" />
+<!--    <EditText-->
+<!--        android:id="@+id/urlLink"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:hint="Masukan Link URL" />-->
 
-    <Button
-        android:id="@+id/dowloadBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:text="Download File" />
+<!--    <Button-->
+<!--        android:id="@+id/dowloadBtn"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_centerVertical="true"-->
+<!--        android:text="Download File" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/percentIndicator"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_below="@+id/dowloadBtn"-->
+<!--        android:layout_marginTop="50dp" />-->
 
     <ProgressBar
         android:id="@+id/progressBar"
@@ -26,4 +34,10 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         style="@android:style/Widget.ProgressBar.Horizontal"/>
+
+    <com.github.barteksc.pdfviewer.PDFView
+        android:id="@+id/pdfView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
 </RelativeLayout>
